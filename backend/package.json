@@ -1,0 +1,46 @@
+{
+  "name": "memorialqr-backend",
+  "version": "2.0.0",
+  "description": "MemorialQR API Server",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "node scripts/run-migrations.js",
+    "smoke": "node scripts/studio-sanity-check.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1013.0",
+    "@aws-sdk/s3-request-presigner": "^3.1013.0",
+    "@google/generative-ai": "^0.24.0",
+    "archiver": "^7.0.1",
+    "bcryptjs": "^2.4.3",
+    "canvas": "^3.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "firebase-admin": "^13.7.0",
+    "google-auth-library": "^9.15.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.1.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^8.0.2",
+    "pdfkit": "^0.17.2",
+    "pg": "^8.12.0",
+    "qrcode": "^1.5.4",
+    "razorpay": "^2.9.2",
+    "resend": "^3.2.0",
+    "sanitize-html": "^2.17.2",
+    "sharp": "^0.33.5",
+    "slugify": "^1.6.6",
+    "speakeasy": "^2.0.0",
+    "uuid": "^10.0.0",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.4",
+    "nodemon": "^3.1.4"
+  }
+}
